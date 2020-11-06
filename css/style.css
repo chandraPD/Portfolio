@@ -1,0 +1,359 @@
+*{
+    margin:0;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+.container {
+    margin-left: auto;
+    margin-right: auto;
+    padding: 70px 100px;
+    box-shadow: 10px 10px 5px grey;
+}
+
+#header{
+    background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("https://images.unsplash.com/photo-1600695268275-1a6468700bd5?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1351&q=80");
+    height: 100vh;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    display: block;
+    background-color: rgba(34, 34, 34, 0.075);
+}
+
+
+#profile{
+    height: 100vh;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    display: block;
+    background-color: rgb(255, 255, 255);
+    padding-top: 15%;
+}
+
+#profile-content {
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+h2 {
+    text-align: center;
+    display: flex;
+}
+
+ h2:before,
+ h2:after {
+  content: '';
+  flex: 1;
+  margin: auto 1em;
+  height: 0;
+  border-top: solid rgb(34, 34, 34) 1px;
+}
+
+h2 span {
+    max-width: 19em
+}
+
+.divider
+{
+	position: relative;
+	margin: 25px;
+	height: 1px;
+}
+
+.div-transparent:before
+{
+	content: "";
+	position: absolute;
+	top: 0;
+	left: 5%;
+	right: 5%;
+	width: 90%;
+	height: 1px;
+	background-image: linear-gradient(to right, transparent, rgb(48,49,51), transparent);
+}
+#experience{
+    height: 100vh;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    display: block;
+    background-color: rgba(34, 34, 34, 0.075);
+}
+
+
+#abilities{
+    height: 100vh;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    display: block;
+}
+
+
+#contact{
+    /* height: 100vh; */
+    /* background-attachment: fixed; */
+    /* background-size: cover; */
+    background-position: center;
+    display: block;
+    background-color: rgba(34, 34, 34, 0.075);
+}
+
+#header .title{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+    color: rgb(212, 205, 205);
+    text-align: center;
+
+  }
+
+  .header-title1 {
+      color: white;
+      font-size: 20px;
+  }
+
+  .header-title2 {
+    color: white;
+    font-size: 30px;
+}
+  .sub-title1 {
+    color: black;
+    font-size: 20px;
+  }
+
+  .sub-title2 {
+    color: black;
+      text-align: center;
+      font-size: 30px;
+  }
+
+  nav{
+    width: 100%;
+    height: 50px;
+    background: rgba(0, 0, 0, .8);
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+    position: sticky;
+    top: 0px;
+  }
+  nav ul{
+    display: flex;
+    margin: 0;
+    list-style-type: none;
+    padding: 0px 100px;
+  }
+
+  nav ul li {
+      list-style-type: none;
+      flex: 50%;
+  }
+  
+  nav ul li a{
+      display: block;
+      color: rgb(243, 242, 242);
+      padding: 0 20px;
+      text-decoration: none;
+      text-transform: uppercase;
+      font-weight: bold;
+      line-height: 50px;
+      text-align: center;
+}
+
+.go-to-top {
+    width: 50px;
+    height: 50px;
+    position: fixed;
+    bottom: 10px;
+    right: 35px;
+    font-size: 50px;
+    border: 1px solid black;
+    text-align: center;
+}
+
+.go-to-top {
+    background: #222 url(/assets/up.png) no-repeat 12px;
+    background-size: 25px 25px;
+}
+
+.go-to-top a {
+    text-decoration: none;
+}
+
+  .go-to-top .tooltiptext {
+    visibility: hidden;
+    width: 120px;
+    background-color: #555;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+    position: absolute;
+    z-index: 1;
+    bottom: 125%;
+    left: 50%;
+    margin-left: -60px;
+    opacity: 0;
+    transition: opacity 0.3s;
+    font-size: 20px;
+  }
+  
+  .go-to-top .tooltiptext::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: #555 transparent transparent transparent;
+  }
+  
+  .go-to-top:hover .tooltiptext {
+    visibility: visible;
+    opacity: 1;
+  }
+
+  div .content {
+    display: flex;
+    flex-direction: column;
+    font-size: 20px;
+    margin-left: 10%;
+    margin-right: 10%;
+  }
+
+.experiences .row {
+    display: flex;
+    flex-direction: row;
+    padding: 10px;
+    flex: 50%;
+}
+
+
+.experiences .row .item1 {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    flex: 50%;
+    border-right: 1px solid #555;
+}
+
+
+.experiences .row .item {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    flex: 50%;
+}
+
+.experiences.reverse {
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+div h3 {
+    flex-direction: row;
+    margin-bottom: 10px;
+}
+
+p.year {
+    color: #141645;
+    font-weight: bold;
+}
+
+.content h4 {
+    color: #2286ce;
+    font-weight: bold;
+}
+
+
+.abilities .row {
+    display: flex;
+    flex-direction: row;
+    padding: 10px;
+    flex: 50%;
+    flex-wrap: wrap;
+}
+
+.abilities .row .item {
+    display: flex;
+    flex-direction: row;
+    flex: 30%;
+    padding: 0px 15px 5px 15px;
+    white-space: nowrap;
+}
+
+.abilities.row.item.val1 {
+    flex: 2;
+    width: 50px;
+    padding-right: 50px;
+    white-space: nowrap;
+}
+
+.abilities.row.item.val2 {
+    flex: 8;
+}
+
+
+p.level {
+    font-size: 15px;
+    text-transform: uppercase;
+}
+
+.abilities.row.item.val {
+    flex: 20%;
+}
+
+img.social-link-img{
+    width: 150px;
+    height: 150px;
+}
+a.social-link-a{
+    padding: 20px;
+    float: left;
+}
+
+#social-link{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+div#number {
+    text-align: center;
+    font-size: 29px;
+}
+
+div#email {
+    text-align: center;
+    font-size: 25px;
+}
+
+a.text {
+    text-decoration: none;
+    color: black;
+}
+
+#footer{
+    background-color: rgb(239 239 239);
+    padding: 15px;
+    border-top: 1px solid grey;
+}
+
+.para_footer {
+    float: right;
+    color: black;
+    vertical-align: middle;
+}
+
+.logo_footer {
+    width: 35px;
+    height: auto;
+    margin-left: 16px;
+  }
