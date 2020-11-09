@@ -370,3 +370,7 @@ a.text {
         flex: 50%;
     }
   }
+
+img.social-link-img:hover {
+  transform: scale(1.1);
+}
