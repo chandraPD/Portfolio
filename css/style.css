@@ -185,7 +185,7 @@ nav ul li a:hover{
 }
 
 .go-to-top {
-    background: #222 url(./assets/up.png) no-repeat 12px;
+    background: #222 url(../assets/up.png) no-repeat 12px;
     background-size: 25px 25px;
 }
 
