@@ -6,7 +6,7 @@ html{
     scroll-behavior: smooth;
 }
 
-.container {
+.container-1 {
     margin-left: auto;
     margin-right: auto;
     padding: 70px 100px;
@@ -142,6 +142,7 @@ h2 span {
     border-bottom: 1px solid black;
     position: sticky;
     top: 0px;
+    z-index: 100;
   }
   nav ul{
     display: flex;
@@ -227,37 +228,11 @@ nav ul li a:hover{
     opacity: 1;
   }
 
-  div .content {
-    display: flex;
-    flex-direction: column;
-    font-size: 20px;
-    margin-left: 10%;
-    margin-right: 10%;
-  }
-
 .experiences .row {
-    display: flex;
-    flex-direction: row;
-    padding: 10px;
+    padding: 0px 10px 0px 10px;
     flex: 50%;
 }
 
-
-.experiences .row .item1 {
-    display: flex;
-    flex-direction: column;
-    padding: 10px;
-    flex: 50%;
-    border-right: 1px solid #555;
-}
-
-
-.experiences .row .item {
-    display: flex;
-    flex-direction: column;
-    padding: 10px;
-    flex: 50%;
-}
 
 .experiences.reverse {
     display: flex;
@@ -280,41 +255,10 @@ p.year {
 }
 
 
-.abilities .row {
-    display: flex;
-    flex-direction: row;
-    padding: 10px;
-    flex: 50%;
-    flex-wrap: wrap;
-}
-
-.abilities .row .item {
-    display: flex;
-    flex-direction: row;
-    flex: 35%;
-    padding: 0px 15px 5px 15px;
-    white-space: nowrap;
-}
-
-.abilities.row.item.val1 {
-    flex: 2;
-    width: 50px;
-    padding-right: 50px;
-    white-space: nowrap;
-}
-
-.abilities.row.item.val2 {
-    flex: 8;
-}
-
 
 p.level {
     font-size: 15px;
     text-transform: uppercase;
-}
-
-.abilities.row.item.val {
-    flex: 20%;
 }
 
 img.social-link-img{
@@ -365,12 +309,60 @@ a.text {
     margin-left: 16px;
   }
 
-  @media (max-width: 800px){
-    .abilities .row .item{
-        flex: 50%;
-    }
+  p.level{
+      white-space: nowrap;
+      vertical-align: center;
+      font-size: 16px;
   }
+
 
 img.social-link-img:hover {
   transform: scale(1.1);
+}
+
+#number p, #email a{
+    font-size: 20px;
+}
+
+
+@media (min-width: 576px) { 
+    
+    .d-flex .flex-row .flex-wrap .flex-items{
+        flex: 90%;        
+        }
+}
+
+@media (min-width: 768px) { 
+    
+    div.flex-items{
+        flex: 90%;
+    }
+}
+
+@media (min-width: 992px) {  
+   
+    div.flex-items{
+        flex: 35%;
+    }
+
+    div.content h3{
+        font-size: 14px;
+    }
+}
+
+@media (min-width: 1200px) {  
+    div.flex-items{
+        flex: 35%;
+    }
+    
+    div.content h3{
+        font-size: 25px;
+    }
+
+    div.content h4{
+        font-size: 20px;
+    }
+    div.content p{
+        font-size: 15px;;
+    }
 }
